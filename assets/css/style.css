@@ -2,6 +2,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background: #352f5b;
+}
+.todos li{
+  background: #423a6f;
 }
 
 textarea{
@@ -12,10 +16,20 @@ textarea{
   border-left: 1px solid black;
   padding: 10px;
 }
+.container {
+  max-width: 400px;
+}
+input[type=text],
+input[type=text]:focus{
+  color: #fff;
+  border: none;
+  background: rgba(0,0,0,0.2);
+  max-width: 400px;
+}
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: rgb(44, 44, 133);
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -68,4 +82,7 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+.delete{
+  cursor: pointer;
 }
